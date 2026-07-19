@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rizky &amp; Elvina · 15 Agustus 2026</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Falling gunungan petals -->
+<div class="petal-layer" aria-hidden="true">
+  <span class="petal" style="--left:4%;   --size:22px; --duration:17s; --delay:-2s;  --sway:24px; --opacity:0.85; --tint:#60241E;"></span>
+  <span class="petal" style="--left:14%;  --size:16px; --duration:13s; --delay:-9s;  --sway:18px; --opacity:0.8;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:23%;  --size:26px; --duration:19s; --delay:-5s;  --sway:30px; --opacity:0.9;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:33%;  --size:14px; --duration:12s; --delay:-11s; --sway:16px; --opacity:0.8;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:41%;  --size:20px; --duration:15s; --delay:-3s;  --sway:26px; --opacity:0.85; --tint:#60241E;"></span>
+  <span class="petal" style="--left:50%;  --size:24px; --duration:18s; --delay:-8s;  --sway:20px; --opacity:0.85; --tint:#60241E;"></span>
+  <span class="petal" style="--left:58%;  --size:15px; --duration:11s; --delay:-1s;  --sway:22px; --opacity:0.8;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:67%;  --size:22px; --duration:16s; --delay:-6s;  --sway:28px; --opacity:0.85; --tint:#60241E;"></span>
+  <span class="petal" style="--left:75%;  --size:18px; --duration:14s; --delay:-10s; --sway:18px; --opacity:0.8;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:83%;  --size:26px; --duration:20s; --delay:-4s;  --sway:32px; --opacity:0.9;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:91%;  --size:16px; --duration:13s; --delay:-7s;  --sway:20px; --opacity:0.8;  --tint:#60241E;"></span>
+  <span class="petal" style="--left:97%;  --size:20px; --duration:15.5s; --delay:-12s; --sway:24px; --opacity:0.85; --tint:#60241E;"></span>
+</div>
+
+<main class="page">
+
+  <!-- Background music -->
+  <audio id="bg-audio" src="audio/instrumentalmp3.mp3" loop playsinline preload="auto"></audio>
+
+  <!-- Floating music toggle -->
+  <button type="button" id="music-toggle" class="music-toggle" aria-label="Putar musik">
+    <svg id="icon-music" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-pulse">
+      <path d="M9 18V5.6a1 1 0 0 1 .8-.98l9-1.8A1 1 0 0 1 20 3.8V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="6.5" cy="18" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="17.5" cy="16" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+    </svg>
+    <svg id="icon-pause" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon" hidden>
+      <rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/>
+      <rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div id="gate-bg" class="gate-bg">
+      <img src="images/java-wedding-hero.jpg" alt="Altar pernikahan adat Jawa dihiasi bunga dan ukiran kayu" class="hero-img" draggable="false" />
+      <div class="hero-veil"></div>
+    </div>
+
+    <!-- Flying birds -->
+    <div class="bird-layer" aria-hidden="true">
+      <div class="bird-container bird-container--one"><div class="bird bird--one"></div></div>
+      <div class="bird-container bird-container--two"><div class="bird bird--two"></div></div>
+      <div class="bird-container bird-container--three"><div class="bird bird--three"></div></div>
+      <div class="bird-container bird-container--four"><div class="bird bird--four"></div></div>
+      <div class="bird-container bird-container--five"><div class="bird bird--five"></div></div>
+      <div class="bird-container bird-container--six"><div class="bird bird--six"></div></div>
+      <div class="bird-container bird-container--seven"><div class="bird bird--seven"></div></div>
+    </div>
+
+    <header class="hero-header">
+      <span class="hero-monogram">R &amp; E</span>
+      <button type="button" id="btn-lokasi" class="hero-lokasi-btn" hidden>Lokasi Acara</button>
+    </header>
+
+    <div class="hero-content">
+      <p class="hero-rise hero-rise-1 label-text">The Wedding Of</p>
+      <div class="gold-divider hero-rise hero-rise-1" aria-hidden="true">
+        <span class="gold-line gold-line-r"></span>
+        <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+        <span class="gold-line gold-line-l"></span>
+      </div>
+      <h1 class="hero-rise hero-rise-2 hero-title">
+        Rizky<span class="amp">&amp;</span>Elvina
+      </h1>
+      <div class="gold-divider hero-rise hero-rise-3" aria-hidden="true">
+        <span class="gold-line gold-line-r"></span>
+        <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+        <span class="gold-line gold-line-l"></span>
+      </div>
+      <p class="hero-rise hero-rise-3 hero-sub">
+        Dengan penuh sukacita, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberi doa restu pada hari pernikahan kami.
+      </p>
+
+      <div id="gate-content" class="gate-content hero-rise hero-rise-4 hero-cta">
+        <button type="button" id="btn-buka" class="btn-outline">
+          Buka Undangan
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-arrow"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <span class="hero-date">15 Agustus 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REST OF THE INVITATION — locked until "Buka Undangan" is tapped ─── -->
+  <div id="rest" class="rest hidden" aria-hidden="true" inert>
+
+    <!-- ─── VERSE: AR-RUM 21 ─── -->
+    <section id="verse" class="section">
+      <div class="gold-frame reveal card card-cream">
+        <p class="label-text center">Bismillahirrahmanirrahim</p>
+        <h2 class="display-title center mt-4">An Invitation of Love</h2>
+        <div class="gold-divider mt-6" aria-hidden="true">
+          <span class="gold-line gold-line-r"></span>
+          <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+          <span class="gold-line gold-line-l"></span>
+        </div>
+
+        <p lang="ar" dir="rtl" class="arabic-verse">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+        </p>
+
+        <p class="verse-translation">
+          “Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
+        </p>
+        <p class="label-text mt-5">QS. Ar-Rum: 21</p>
+      </div>
+    </section>
+
+    <!-- ─── COUPLE ─── -->
+    <section class="section section-wide">
+      <div class="gold-frame reveal card card-cream">
+        <p class="label-text center">Mempelai</p>
+        <h2 class="display-title center mt-3">The Couple</h2>
+        <div class="gold-divider mt-6" aria-hidden="true">
+          <span class="gold-line gold-line-r"></span>
+          <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+          <span class="gold-line gold-line-l"></span>
+        </div>
+
+        <div class="couple-grid mt-12">
+          <div class="couple-side">
+            <h3 class="couple-name">Muhamad<br />Rizky</h3>
+          </div>
+          <span class="couple-amp">&amp;</span>
+          <div class="couple-side">
+            <h3 class="couple-name">Elvina<br />Andriasrini</h3>
+          </div>
+        </div>
+
+        <p class="couple-desc">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+        </p>
+
+        <div class="gold-divider mt-10" aria-hidden="true">
+          <span class="gold-line gold-line-r"></span>
+          <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+          <span class="gold-line gold-line-l"></span>
+        </div>
+
+        <div class="acara-cards mt-10">
+
+          <article class="acara-card">
+            <span class="acara-corner acara-corner--tl" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--tr" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--bl" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--br" aria-hidden="true"></span>
+
+            <svg viewBox="0 0 40 16" class="gold-glyph acara-card-glyph" fill="currentColor" aria-hidden="true"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+            <p class="acara-card-title">Akad Nikah</p>
+            <span class="acara-card-rule" aria-hidden="true"></span>
+
+            <p class="acara-card-day">Sabtu</p>
+            <p class="acara-card-daynum">15</p>
+            <p class="acara-card-month">Agustus 2026</p>
+
+            <p class="acara-card-time">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-clock"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              09.00 WIB
+            </p>
+
+            <p class="acara-card-loclabel">Lokasi Acara</p>
+            <p class="acara-card-venue">HCI Convention Semarang</p>
+            <p class="acara-card-address">Jl. Pemuda No. 112, Sekayu, Kec. Semarang Tengah,<br />Kota Semarang, Jawa Tengah</p>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=HCI%20Convention%20Semarang" target="_blank" rel="noreferrer" class="acara-card-maps">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-location"><path d="M20 10.2c0 5.8-8 11.2-8 11.2s-8-5.4-8-11.2a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.8" stroke="currentColor" stroke-width="1.6"/></svg>
+              Google Maps
+            </a>
+          </article>
+
+          <article class="acara-card">
+            <span class="acara-corner acara-corner--tl" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--tr" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--bl" aria-hidden="true"></span>
+            <span class="acara-corner acara-corner--br" aria-hidden="true"></span>
+
+            <svg viewBox="0 0 40 16" class="gold-glyph acara-card-glyph" fill="currentColor" aria-hidden="true"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+            <p class="acara-card-title">Syukuran</p>
+            <span class="acara-card-rule" aria-hidden="true"></span>
+
+            <p class="acara-card-day">Sabtu</p>
+            <p class="acara-card-daynum">15</p>
+            <p class="acara-card-month">Agustus 2026</p>
+
+            <p class="acara-card-time">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-clock"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              11.00 – 13.00 WIB
+            </p>
+
+            <p class="acara-card-loclabel">Lokasi Acara</p>
+            <p class="acara-card-venue">HCI Convention Semarang</p>
+            <p class="acara-card-address">Jl. Pemuda No. 112, Sekayu, Kec. Semarang Tengah,<br />Kota Semarang, Jawa Tengah</p>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=HCI%20Convention%20Semarang" target="_blank" rel="noreferrer" class="acara-card-maps">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-location"><path d="M20 10.2c0 5.8-8 11.2-8 11.2s-8-5.4-8-11.2a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.8" stroke="currentColor" stroke-width="1.6"/></svg>
+              Google Maps
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SAVE THE DATE + MAP ─── -->
+    <section id="location" class="section section-xl">
+      <div class="gold-frame reveal card card-cream location-card">
+        <div class="location-info">
+          <p class="label-text">Save The Date</p>
+          <h2 class="display-title location-date mt-4">Sabtu,<br />15 Agustus<br />2026</h2>
+          <div class="gold-divider mt-6 justify-start" aria-hidden="true">
+            <span class="gold-line gold-line-r"></span>
+            <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+            <span class="gold-line gold-line-l"></span>
+          </div>
+
+          <div class="location-row mt-8">
+            <span class="location-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-location">
+                <path d="M20 10.2c0 5.8-8 11.2-8 11.2s-8-5.4-8-11.2a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="10" r="2.8" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <div>
+              <p class="location-name">HCI Convention Semarang</p>
+              <p class="location-address">Jl. Pemuda No. 112, Sekayu, Kec. Semarang Tengah,<br />Kota Semarang, Jawa Tengah</p>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=HCI%20Convention%20Semarang" target="_blank" rel="noreferrer" class="btn-solid mt-9">
+            Buka Google Maps
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon icon-arrow"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="location-map">
+          <iframe
+            title="Google Map HCI Convention Semarang"
+            src="https://maps.google.com/maps?q=HCI%20Convention%20Semarang&z=15&output=embed"
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BANK DETAILS ─── -->
+    <section class="section">
+      <div class="gold-frame reveal card card-dark">
+        <p class="label-text label-gold center">Dana Restu</p>
+        <h2 class="display-title title-gold center mt-4">With Gratitude</h2>
+        <div class="gold-divider mt-6" aria-hidden="true">
+          <span class="gold-line gold-line-r"></span>
+          <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+          <span class="gold-line gold-line-l"></span>
+        </div>
+        <p class="bank-desc mt-6">
+          Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Apabila berkenan memberi tanda kasih, dapat melalui rekening berikut.
+        </p>
+
+        <div class="bank-box mt-10">
+          <div class="bank-row">
+            <div>
+              <p class="label-text label-gold">Bank BCA</p>
+              <p class="bank-number">8730 7064 57</p>
+              <p class="bank-holder">a.n. Muhamad Rizky</p>
+            </div>
+            <button type="button" id="btn-copy" class="copy-btn" aria-label="Salin nomor rekening">
+              <svg id="icon-copy" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="icon">
+                <rect x="8" y="8" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M16 8V6.5A1.5 1.5 0 0 0 14.5 5h-9A1.5 1.5 0 0 0 4 6.5v9A1.5 1.5 0 0 0 5.5 17H8" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+              <span id="icon-ok" class="copy-ok" hidden>OK</span>
+            </button>
+          </div>
+        </div>
+        <p id="copy-msg" class="copy-msg" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="reveal footer-card">
+        <h2 class="footer-title">Terima Kasih</h2>
+        <p class="footer-date">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara, berkenan hadir dan memberikan do'a restu kepada kami</p>
+        <p class="footer-closing"><strong>Wassalamu'alaikum Warahmatullahi Wabarakatuh.</strong></p>
+        <div class="gold-divider mt-6" aria-hidden="true">
+          <span class="gold-line gold-line-r"></span>
+          <svg viewBox="0 0 40 16" class="gold-glyph" fill="currentColor"><path d="M20 0c2 5 7 8 12 8-5 0-10 3-12 8-2-5-7-8-12-8 5 0 10-3 12-8z"/></svg>
+          <span class="gold-line gold-line-l"></span>
+        </div>
+        <p class="footer-names">Rizky <span class="footer-amp">&amp;</span> Elvina</p>
+        <p class="footer-closing"></p>
+      </div>
+    </footer>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
