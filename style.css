@@ -140,8 +140,8 @@ button { cursor: pointer; }
   position: absolute;
   top: -10%;
   left: var(--left, 50%);
-  width: var(--size, 20px);
-  height: var(--size, 20px);
+  width: calc(var(--size, 20px) * 2);
+  height: calc(var(--size, 20px) * 2);
   background-color: var(--tint, var(--brown-petal));
   -webkit-mask-image: url("images/gunungan-petal.svg");
   mask-image: url("images/gunungan-petal.svg");
